@@ -1,0 +1,28 @@
+\documentclass[12pt,a4paper]{article}
+
+\linespread{1.35}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle}
+
+\setmainfont[ItalicFont = * Italic]{Charter}
+
+\usepackage{url}
+\usepackage{doi}
+
+\usepackage[style=apa,backend=biber,language=british,firstinits=false]{biblatex}
+\DeclareLanguageMapping{british}{british-apa}
+\addbibresource{essay.bib}
+
+\title{}
+\author{Benjamin M. A'Lee}
+\date{}
+\begin{document}
+
+\maketitle
+
+\clearpage
+\raggedright
+\printbibliography{}
+
+\end{document}
