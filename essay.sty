@@ -1,0 +1,24 @@
+\linespread{1.35}
+
+\usepackage{fontspec}
+\defaultfontfeatures{
+  Ligatures={TeX},
+  Numbers=OldStyle,
+  Fractions=On,
+}
+
+\setmainfont[ItalicFont = * Italic]{Charter}
+
+\usepackage{url}
+\usepackage{doi}
+
+\usepackage[
+  style=apa,
+  backend=biber,
+  language=british,
+  firstinits=false,
+]{biblatex}
+\DeclareLanguageMapping{british}{british-apa}
+\addbibresource{essay.bib}
+
+\newcommand{\makebib}{\clearpage\raggedright\printbibliography}
